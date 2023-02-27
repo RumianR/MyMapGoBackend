@@ -13,6 +13,11 @@ func init() {
 
 func main() {
 	r := gin.Default()
+
+	// Routes
+
+	// Profiles
 	r.GET("/profiles", controllers.ProfilesGetAll)
-	r.Run() // listen and serve on 0.0.0.0:8080
+
+	r.Run() // listen and serve on env PORT
 }
