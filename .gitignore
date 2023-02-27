@@ -1,0 +1,31 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+vendor/
+
+# Compiled Go binary files
+*.exe
+*.test
+*.prof
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Log files and binaries created by test coverage tools
+*.testlog
+
+# Go Tools
+.idea/
+.vscode/
+.tmuxinator.yml
+.tmuxinator/
+*.swp
+
+
+# env files
+.env
