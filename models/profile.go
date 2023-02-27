@@ -2,12 +2,10 @@ package models
 
 import (
 	"time"
-
-	uuid "github.com/jackc/pgx/pgtype/ext/gofrs-uuid"
 )
 
 type Profile struct {
-	ID              uuid.UUID `db:"id" json:"id"`
+	ID              string    `db:"id" json:"id"`
 	UpdatedAt       time.Time `db:"updated_at" json:"updated_at"`
 	Username        string    `db:"username" json:"username"`
 	AvatarURL       string    `db:"avatar_url" json:"avatar_url"`

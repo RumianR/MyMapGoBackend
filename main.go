@@ -18,6 +18,10 @@ func main() {
 
 	// Profiles
 	r.GET("/profiles", controllers.ProfilesGetAll)
+	r.POST("/profiles", controllers.ProfilesCreate)
+	r.GET("/profiles/:id", controllers.ProfilesGetOne)
+	r.PUT("/profiles/:id", controllers.ProfilesUpdate)
+	r.DELETE("/profiles/:id", controllers.ProfilesDelete)
 
 	r.Run() // listen and serve on env PORT
 }
